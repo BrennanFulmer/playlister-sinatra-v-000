@@ -3,7 +3,10 @@ class SongsController < ApplicationController
   use Rack::Flash
 
   get "/songs" do
+=begin
     binding.pry
+    
+=end
     @songs = Song.all
     erb :"/songs/index"
   end
