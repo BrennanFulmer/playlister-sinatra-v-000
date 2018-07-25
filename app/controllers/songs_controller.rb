@@ -4,8 +4,9 @@ class SongsController < ApplicationController
 
   get "/songs" do
 =begin
-    binding.pry
+    
     files_array = LibraryParser.parse
+    binding.pry
 =end
     @songs = Song.all
     erb :"/songs/index"
