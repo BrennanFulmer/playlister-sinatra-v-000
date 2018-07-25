@@ -4,7 +4,7 @@ class SongsController < ApplicationController
 
   get "/songs" do
 =begin
-    
+# for testing library parser
     files_array = LibraryParser.parse
     binding.pry
 =end
